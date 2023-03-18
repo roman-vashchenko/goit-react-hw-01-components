@@ -8,6 +8,15 @@ export const Wrapper = styled.div`
 
 export const MainInformation = styled.div`
   text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+`;
+
+export const Name = styled.p`
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
 `;
 
 export const Avatar = styled.img`
@@ -15,8 +24,18 @@ export const Avatar = styled.img`
   height: 400px;
   display: block;
   margin: auto;
+  margin-bottom: 10px;
 `;
 
 export const UserStatistics = styled.ul`
   display: flex;
+  gap: 30px;
+  width: 200px;
+  margin: 0 auto;
+`;
+
+export const Number = styled.span`
+  display: block;
+  text-align: center;
+  font-weight: 700;
 `;
