@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StatisticsSection = styled.section`
-  width: 496px;
+  width: 497px;
   margin: 0 auto;
 `;
 
@@ -20,7 +20,8 @@ export const StatisticsList = styled.ul`
 
 export const StatisticsItem = styled.li`
   text-align: center;
-  padding: 10px 45px;
+  padding: 10px 46px;
+  background-color: ${props => props.color};
 `;
 
 export const Percentage = styled.span`

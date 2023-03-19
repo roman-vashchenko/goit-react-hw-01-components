@@ -11,6 +11,7 @@ export const Avatar = styled.img`
   width: 200px;
   height: 200px;
   display: block;
+  padding-top: 30px;
   margin: auto;
   margin-bottom: 10px;
   border-radius: 50%;

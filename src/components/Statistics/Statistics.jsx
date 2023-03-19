@@ -6,6 +6,10 @@ import {
   Title,
 } from './Statistics.style';
 
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+
 export const Statistics = ({ title, stats, id }) => {
   return (
     <StatisticsSection>
@@ -13,7 +17,7 @@ export const Statistics = ({ title, stats, id }) => {
       <StatisticsList>
         {stats.map((stat, id) => {
           return (
-            <StatisticsItem key={stat.id}>
+            <StatisticsItem key={id} color={getRandomHexColor()}>
               <span>{stat.label}</span>
               <Percentage>{stat.percentage}%</Percentage>
             </StatisticsItem>
