@@ -1,19 +1,25 @@
-import { StatisticsList, StatisticsWrap, Title } from './Statistics.style';
+import {
+  Percentage,
+  StatisticsItem,
+  StatisticsList,
+  StatisticsSection,
+  Title,
+} from './Statistics.style';
 
 export const Statistics = ({ title, stats, id }) => {
   return (
-    <StatisticsWrap>
+    <StatisticsSection>
       {title && <Title>Upload stats</Title>}
       <StatisticsList>
         {stats.map((stat, id) => {
           return (
-            <li key={stat.id}>
+            <StatisticsItem key={stat.id}>
               <span>{stat.label}</span>
-              <span>{stat.percentage}%</span>
-            </li>
+              <Percentage>{stat.percentage}%</Percentage>
+            </StatisticsItem>
           );
         })}
       </StatisticsList>
-    </StatisticsWrap>
+    </StatisticsSection>
   );
 };

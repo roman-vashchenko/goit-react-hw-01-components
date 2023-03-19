@@ -3,8 +3,12 @@ import {
   MainInformation,
   Name,
   Quantity,
+  Tag,
+  Location,
   UserStatistics,
+  UserStatisticsItem,
   Wrapper,
+  Label,
 } from './Profile.style';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -13,22 +17,22 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <Avatar src={avatar} alt="User avatar" />
       <MainInformation>
         <Name>{username}</Name>
-        <p>@{tag}</p>
-        <p>{location}</p>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
       </MainInformation>
       <UserStatistics>
-        <li>
-          <span>Followers</span>
-          <Quantity>1000</Quantity>
-        </li>
-        <li>
-          <span>Views</span>
-          <Quantity>2000</Quantity>
-        </li>
-        <li>
-          <span>Likes</span>
-          <Quantity>3000</Quantity>
-        </li>
+        <UserStatisticsItem>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
+        </UserStatisticsItem>
+        <UserStatisticsItem>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
+        </UserStatisticsItem>
+        <UserStatisticsItem>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
+        </UserStatisticsItem>
       </UserStatistics>
     </Wrapper>
   );
