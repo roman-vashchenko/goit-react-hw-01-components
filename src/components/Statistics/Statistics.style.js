@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StatisticsSection = styled.section`
   width: 497px;
   margin: 0 auto;
+  margin-bottom: 25px;
 `;
 
 export const Title = styled.h2`
@@ -20,7 +21,8 @@ export const StatisticsList = styled.ul`
 
 export const StatisticsItem = styled.li`
   text-align: center;
-  padding: 10px 46px;
+  padding: 25px 46px;
+  color: #ffffff;
   background-color: ${props => props.color};
 `;
 
