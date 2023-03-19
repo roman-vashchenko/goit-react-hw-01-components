@@ -2,7 +2,7 @@ import {
   Avatar,
   MainInformation,
   Name,
-  Number,
+  Quantity,
   UserStatistics,
   Wrapper,
 } from './Profile.style';
@@ -19,15 +19,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <UserStatistics>
         <li>
           <span>Followers</span>
-          <Number>1000</Number>
+          <Quantity>1000</Quantity>
         </li>
         <li>
           <span>Views</span>
-          <Number>2000</Number>
+          <Quantity>2000</Quantity>
         </li>
         <li>
           <span>Likes</span>
-          <Number>3000</Number>
+          <Quantity>3000</Quantity>
         </li>
       </UserStatistics>
     </Wrapper>

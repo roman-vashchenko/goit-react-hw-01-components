@@ -34,7 +34,7 @@ export const UserStatistics = styled.ul`
   margin: 0 auto;
 `;
 
-export const Number = styled.span`
+export const Quantity = styled.span`
   display: block;
   text-align: center;
   font-weight: 700;
