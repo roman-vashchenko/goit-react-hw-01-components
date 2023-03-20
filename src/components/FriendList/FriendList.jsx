@@ -1,3 +1,4 @@
+import PropTypes, { arrayOf } from 'prop-types';
 import { FriendItem, FriendListWrap, Name, Status } from './FriendList.style';
 
 export const FriendList = ({ friends }) => {
@@ -16,4 +17,13 @@ export const FriendList = ({ friends }) => {
       </ul>
     </FriendListWrap>
   );
+};
+
+FriendList.propTypes = {
+  friends: arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+    })
+  ),
 };
