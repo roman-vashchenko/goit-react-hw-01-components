@@ -7,10 +7,13 @@ export const FriendListWrap = styled.div`
   background-color: #ffffff;
 `;
 
-export const FriendItem = styled.li`
+export const FriendListItemWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 25px;
+`;
+
+export const FriendItem = styled.li`
   margin-bottom: 25px;
   padding: 25px;
   box-shadow: 3px 2px 5px 3px rgba(0, 0, 0, 0.53);
