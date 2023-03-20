@@ -24,3 +24,7 @@ export const Status = styled.span`
   border-radius: 50%;
   background-color: ${props => (props.status ? 'green' : 'red')};
 `;
+
+export const Name = styled.p`
+  font-size: 30px;
+`;

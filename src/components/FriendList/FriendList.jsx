@@ -1,4 +1,4 @@
-import { FriendItem, FriendListWrap, Status } from './FriendList.style';
+import { FriendItem, FriendListWrap, Name, Status } from './FriendList.style';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -9,7 +9,7 @@ export const FriendList = ({ friends }) => {
             <FriendItem key={friend.id}>
               <Status status={friend.isOnline}></Status>
               <img src={friend.avatar} alt="User avatar" width="48" />
-              <p>{friend.name}</p>
+              <Name>{friend.name}</Name>
             </FriendItem>
           );
         })}
